@@ -1,0 +1,56 @@
+.calculator {
+  width: 20rem;
+  height: 35rem;
+  background: var(--background-color);
+  display: grid;
+  padding: 1%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.keys-numbers {
+  grid-area: keys-numbers;
+  direction: rtl;
+}
+
+.keys-operators {
+  grid-area: keys-operators;
+}
+
+.keys-sm {
+  grid-area: keys-sm;
+}
+
+.button-scientific {
+  width: 19.5rem;
+  text-align: center;
+  font-size: x-large;
+  padding-left: 5%;
+}
+
+.calculator-keypad {
+  padding-top: 0.3rem;
+  background: var(--background-color);
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 5rem);
+  grid-template-areas: "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-sm keys-sm keys-sm keys-sm";
+}
+
+.calculator-input {
+  border-color: var(--text-color);
+  border: ridge;
+  text-align: right;
+  padding-right: 10%;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.result {
+  min-height: 3rem;
+  color: var(--text-color);
+}
